@@ -1,4 +1,4 @@
-# Programming Microsoft Dynamics NAV Fifth Edition
+# Extending Microsoft Dynamics 365 for Operations Cookbook
 This is the code repository for [Extending Microsoft Dynamics 365 for Operations Cookbook](https://www.packtpub.com/application-development/extending-microsoft-dynamics-365-operations-cookbook?utm_source=github&utm_medium=repository&utm_content=9781786467133), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
 
 ## About the Book
