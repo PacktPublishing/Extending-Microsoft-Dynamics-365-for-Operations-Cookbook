@@ -1,9 +1,9 @@
 # Programming Microsoft Dynamics NAV Fifth Edition
-This is the code repository for [Programming Microsoft Dynamics NAV Fifth Edition](https://www.packtpub.com/application-development/programming-microsoft-dynamics-nav-fifth-edition?utm_source=github&utm_medium=repository&utm_content=9781786468192), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
+This is the code repository for [Extending Microsoft Dynamics 365 for Operations Cookbook](https://www.packtpub.com/application-development/extending-microsoft-dynamics-365-operations-cookbook?utm_source=github&utm_medium=repository&utm_content=9781786467133), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
 
 ## About the Book
-The information in this book will help you shorten your learning curve on how to program for the NAV 2017 ERP system using the C/AL language, the C/SIDE integrated development environment, and their capabilities. We hope you enjoy working with NAV as much as we have.
-Each new version of Microsoft Dynamics NAV is the result of inspiration and hard work along with some good fortune and expert technical investment over the last thirty years.
+If you are a software developer new to Dynamics 365 for Operations programming or an experienced software engineer migrating from its predecessor, Dynamics AX, this book is an ideal tutorial to help you avoid the common pitfalls and make the most of this advanced
+technology. This book is also useful if you are a solution architect or technical consultant, as it provides a deeper insight into the technology behind the solution.
 
 ## Instructions and Navigation
 All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter03.
@@ -11,16 +11,23 @@ All of the code is organized into folders. Each folder starts with a number foll
 The code will look like the following:
 
 ```
-"Sales Line".SETRANGE("Document Type","Sales Header"."Document Type");
-"Sales Line".SETRANGE("Document No.","Sales Header"."No.");
-"Sales Line".CALCSUMS(Amount);
-TotalOrderAmount := "Sales Line".Amount;
+public void modifiedField(FieldId _fieldId)
+{
+  super(_fieldId);
+  switch (_fieldId)
+  {
+    case fieldNum(ConWHSVehicleServiceLine, ItemId):
+    this.initFromInventTable(
+    InventTable::find(this.ItemId));
+    break;
+  }
+}  
 ```
  
  ## Related Products
-* [Programming Microsoft Dynamics™ NAV 2015](https://www.packtpub.com/big-data-and-business-intelligence/programming-microsoft-dynamics%E2%84%A2-nav-2015?utm_source=github&utm_medium=repository&utm_content=9781784394202)
+* [Microsoft Dynamics AX 2012 Reporting Cookbook](https://www.packtpub.com/application-development/microsoft-dynamics-ax-2012-reporting-cookbook?utm_source=github&utm_medium=repository&utm_content=9781849687720)
 
-* [Implementing Microsoft Dynamics NAV 2013](https://www.packtpub.com/application-development/implementing-microsoft-dynamics-nav-2013?utm_source=github&utm_medium=repository&utm_content=9781849686020)
+* [Programming Microsoft Dynamics™ NAV 2015](https://www.packtpub.com/big-data-and-business-intelligence/programming-microsoft-dynamics%E2%84%A2-nav-2015?utm_source=github&utm_medium=repository&utm_content=9781784394202)
 
 * [Microsoft Dynamics NAV 2015 Professional Reporting](https://www.packtpub.com/big-data-and-business-intelligence/microsoft-dynamics-nav-2015-professional-reporting?utm_source=github&utm_medium=repository&utm_content=9781785284731)
 
