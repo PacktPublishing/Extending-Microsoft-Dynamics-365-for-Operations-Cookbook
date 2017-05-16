@@ -6,7 +6,7 @@ If you are a software developer new to Dynamics 365 for Operations programming o
 technology. This book is also useful if you are a solution architect or technical consultant, as it provides a deeper insight into the technology behind the solution.
 
 ## Instructions and Navigation
-All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter03.
+The code for Chapter 05 is organized into one folder, Chapter05 and the rest in one separate folder.
 
 The code will look like the following:
 
