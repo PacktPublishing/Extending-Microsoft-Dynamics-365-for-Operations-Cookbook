@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "ConAnalytics (VAR) [ConAnalytics]", "ConAnalytics\ConAnalytics.rnrproj", "{1AE4BEA4-801C-4F2C-AC02-0DE3A3D526DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AE4BEA4-801C-4F2C-AC02-0DE3A3D526DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE4BEA4-801C-4F2C-AC02-0DE3A3D526DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://binaryconsultants.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ConAnalytics\\ConAnalytics.rnrproj
+		SccProjectName1 = ConAnalytics
+		SccLocalPath1 = ConAnalytics
+	EndGlobalSection
+EndGlobal

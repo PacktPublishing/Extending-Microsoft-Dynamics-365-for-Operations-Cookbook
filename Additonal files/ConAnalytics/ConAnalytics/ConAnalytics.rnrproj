@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Model>ConAnalytics</Model>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectGuid>{1ae4bea4-801c-4f2c-ac02-0de3a3d526de}</ProjectGuid>
+    <Name>ConAnalytics</Name>
+    <RootNamespace>ConAnalytics</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Aggregate Dimensions\" />
+    <Folder Include="Aggregate Measurements\" />
+    <Folder Include="AxAggregateDataEntity\" />
+    <Folder Include="Form Extensions\" />
+    <Folder Include="KPIs\" />
+    <Folder Include="Label Files\" />
+    <Folder Include="Tiles\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxAggregateDataEntity\ConWHSVehicleServiceDataEntity">
+      <SubType>Content</SubType>
+      <Name>ConWHSVehicleServiceDataEntity</Name>
+      <Link>AxAggregateDataEntity\ConWHSVehicleServiceDataEntity</Link>
+    </Content>
+    <Content Include="AxAggregateDimension\ConWHSVehicles">
+      <SubType>Content</SubType>
+      <Name>ConWHSVehicles</Name>
+      <Link>Aggregate Dimensions\ConWHSVehicles</Link>
+    </Content>
+    <Content Include="AxAggregateMeasurement\ConWHSVehicleServiceMeasure">
+      <SubType>Content</SubType>
+      <Name>ConWHSVehicleServiceMeasure</Name>
+      <Link>Aggregate Measurements\ConWHSVehicleServiceMeasure</Link>
+    </Content>
+    <Content Include="AxFormExtension\ConWHSVehicleWorkspace.ConAnalytics">
+      <SubType>Content</SubType>
+      <Name>ConWHSVehicleWorkspace.ConAnalytics</Name>
+      <Link>Form Extensions\ConWHSVehicleWorkspace.ConAnalytics</Link>
+    </Content>
+    <Content Include="AxKPI\ConWHSVehicleServiceThisMonth">
+      <SubType>Content</SubType>
+      <Name>ConWHSVehicleServiceThisMonth</Name>
+      <Link>KPIs\ConWHSVehicleServiceThisMonth</Link>
+    </Content>
+    <Content Include="AxLabelFile\ConAnalytics_en-GB">
+      <SubType>Content</SubType>
+      <Name>ConAnalytics_en-GB</Name>
+      <Link>Label Files\ConAnalytics_en-GB</Link>
+    </Content>
+    <Content Include="AxLabelFile\ConAnalytics_en-US">
+      <SubType>Content</SubType>
+      <Name>ConAnalytics_en-US</Name>
+      <Link>Label Files\ConAnalytics_en-US</Link>
+    </Content>
+    <Content Include="AxTile\ConWHSVehicleServiceThisMonthTile">
+      <SubType>Content</SubType>
+      <Name>ConWHSVehicleServiceThisMonthTile</Name>
+      <Link>Tiles\ConWHSVehicleServiceThisMonthTile</Link>
+    </Content>
+    <Content Include="AxView\ConWHSVehicleServiceExpanded">
+      <SubType>Content</SubType>
+      <Name>ConWHSVehicleServiceExpanded</Name>
+      <Link>Views\ConWHSVehicleServiceExpanded</Link>
+    </Content>
+    <Content Include="AxView\ConWHSVehicleTableExpanded">
+      <SubType>Content</SubType>
+      <Name>ConWHSVehicleTableExpanded</Name>
+      <Link>Views\ConWHSVehicleTableExpanded</Link>
+    </Content>
+    <Content Include="ConAnalytics.en-GB.label.txt">
+      <SubType>Content</SubType>
+      <Name>ConAnalytics.en-GB.label.txt</Name>
+      <DependentUpon>AxLabelFile\ConAnalytics_en-GB</DependentUpon>
+    </Content>
+    <Content Include="ConAnalytics.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>ConAnalytics.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\ConAnalytics_en-US</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Dynamics\AX\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
